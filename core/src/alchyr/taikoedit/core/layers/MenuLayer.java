@@ -138,6 +138,7 @@ public class MenuLayer extends LoadedLayer implements InputLayer, FileDropHandle
 
             initialized = true;
 
+            /*
             Thread updateCheck = new Thread(() -> {
                 try {
                     URL url = new URL("https://docs.google.com/document/d/e/2PACX-1vRgkoP65WMrsJGqaiKlO6cGnqeZbBlmhEXhMqjRr4QH-IIArQR1QaLbe_ffSQXHXAl-hOf9Yye7nMei/pub");
@@ -183,6 +184,7 @@ public class MenuLayer extends LoadedLayer implements InputLayer, FileDropHandle
             updateCheck.setName("Update Check");
             updateCheck.setDaemon(true);
             updateCheck.start();
+            */
         }
         processor.bind();
         FileDropHandler.set(this);
